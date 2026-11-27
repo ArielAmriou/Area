@@ -1,6 +1,6 @@
 # [Spike][Front] Web client stack selection — Decision
 
-> This spike settles **the whole front-end stack** (every layer) in **2 hours**, and ends with **a decision**, not production code.
+> This spike settles **the whole front-end stack** (every layer) and ends with **a decision**, not production code. The POC is limited to **2 hours**.
 > Each evaluated technology has its own sheet, made from [TEMPLATE.md](TEMPLATE.md), in `technos/`.
 > This document feeds the Milestone 1 deliverable: the front-end *technology selection document* (several technologies evaluated against relevant criteria **including security**, documented comparison, concise and justified final choice, practical evidence such as exploratory code).
 
@@ -11,7 +11,7 @@
 | Field            | Value                                               |
 | ---------------- | --------------------------------------------------- |
 | Owner            | @...                                                |
-| Timebox          | **2h**                                              |
+| POC timebox      | **2h**                                              |
 | Date             | `YYYY-MM-DD`, from `HH:MM` to `HH:MM`               |
 | Status           | To do / In progress / Done (keep the right one)     |
 | Issue / ticket   | #...                                                |
@@ -72,20 +72,9 @@
 
 ---
 
-## 4. 2-hour breakdown
+## 4. Layers and evaluation level
 
-| Duration | Step                                                                     |
-| -------- | ------------------------------------------------------------------------ |
-| 15 min   | Re-read the constraints (§2), choose the evaluation level per layer (§5) |
-| 60 min   | POC of the structuring layers, one sheet per candidate                   |
-| 30 min   | "Docs" sheets for the other layers, comparison grid (§6)                 |
-| 15 min   | Decision, risks and follow-up tickets (§9)                               |
-
----
-
-## 5. Layers and evaluation level
-
-> We don't test everything in 2 hours:
+> We don't test everything in the 2-hour POC:
 > - **POC**: 2-3 structuring layers, hard to change later or specific to these specifications. One sheet per candidate, with exploratory code.
 > - **Docs**: secondary layers, compared from documentation. One short sheet per candidate, or just the row below.
 > - **Default**: tooling, default choice without comparison, simply justified.
@@ -111,9 +100,9 @@
 
 ---
 
-## 6. Comparison
+## 5. Comparison
 
-### 6.1 Criteria weights
+### 5.1 Criteria weights
 
 > The specifications require relevant criteria **including security**. Weights from 1 to 3, used in the sheets.
 
@@ -129,7 +118,7 @@
 | Docker build                    |        |
 | Maturity / community / docs     |        |
 
-### 6.2 Grid for structuring layers
+### 5.2 Grid for structuring layers
 
 > One grid per "POC" layer. Copy the scores from the sheets × weights.
 
@@ -143,10 +132,10 @@
 
 ---
 
-## 7. Acceptance criteria
+## 6. Acceptance criteria
 
-- [ ] Every layer in §5 has a selected technology (or "none", justified)
-- [ ] "POC" layers have one sheet per candidate and a grid (§6.2)
+- [ ] Every layer in §4 has a selected technology (or "none", justified)
+- [ ] "POC" layers have one sheet per candidate and a grid (§5.2)
 - [ ] Security is one of the criteria in every sheet
 - [ ] At least one POC proves the risky points in practice
 - [ ] Remaining risks and unknowns are listed
@@ -155,7 +144,7 @@
 
 ---
 
-## 8. Log
+## 7. Log
 
 > Write as you go, **including dead ends** (material for the post-mortem).
 
@@ -165,29 +154,29 @@
 
 ---
 
-## 9. Results
+## 8. Results
 
-### 9.1 Summary (3-5 lines)
+### 8.1 Summary (3-5 lines)
 
 ...
 
-### 9.2 Selected stack
+### 8.2 Selected stack
 
 | Layer | Technology | Version |
 | ----- | ---------- | ------- |
 |       |            |         |
 
-### 9.3 Remaining risks and unknowns
+### 8.3 Remaining risks and unknowns
 
 - ...
 
-### 9.4 Decision
+### 8.4 Decision
 
 > **Approved by:** @... on `YYYY-MM-DD`
 
 A decision can be revised later if evidence invalidates it: document the change, its reason and its consequences.
 
-### 9.5 Next steps
+### 8.5 Next steps
 
 - [ ] Write / update the front-end technology selection document (Milestone 1)
 - [ ] Initialise the web client with the selected stack (config, lint, Dockerfile, CI)
@@ -198,7 +187,7 @@ A decision can be revised later if evidence invalidates it: document the change,
 
 ## Reminders
 
-- **2 hours, no more.** If a layer is not settled by the end, pick the simplest option and note the risk.
+- **2-hour POC, no more.**
 - **No gold-plating**: the POC is throwaway, the decision is the deliverable.
 - **No decision = failed spike.**
 - **Everything must be demonstrable**: the evaluator can ask to prove any claim live.
