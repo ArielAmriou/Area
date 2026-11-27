@@ -2,6 +2,7 @@ import uvicorn
 
 from app import app
 import health
+import externalapi
 
 
 if __name__ == "__main__":
