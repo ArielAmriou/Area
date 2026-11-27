@@ -3,6 +3,7 @@ import uvicorn
 from app import app
 import health
 import externalapi
+import login
 
 
 if __name__ == "__main__":
