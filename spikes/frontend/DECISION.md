@@ -1,7 +1,7 @@
 # [Spike][Front] Web client stack selection — Decision
 
 > This spike settles **the whole front-end stack** (every layer) and ends with **a decision**, not production code. The POC is limited to **2 hours**.
-> Each evaluated technology has its own sheet, made from [TEMPLATE.md](TEMPLATE.md), in `technos/`.
+> Each evaluated technology has its own directory `<layer>-<technology>/` (e.g. `framework-react/`), containing its sheet `spike.md` made from [TEMPLATE.md](TEMPLATE.md), and its POC code.
 > This document feeds the Milestone 1 deliverable: the front-end *technology selection document* (several technologies evaluated against relevant criteria **including security**, documented comparison, concise and justified final choice, practical evidence such as exploratory code).
 
 ---

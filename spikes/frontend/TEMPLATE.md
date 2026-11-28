@@ -1,7 +1,8 @@
 # <Technology> — <Layer>
 
 > Recap sheet for **one** technology evaluated during the front-end spike.
-> Copy this file to `spikes/frontend/technos/<layer>-<technology>.md` (e.g. `framework-react.md`), one sheet per candidate.
+> Copy this file to `spikes/frontend/<layer>-<technology>/spike.md` (e.g. `framework-react/spike.md`), one directory per candidate.
+> The POC code goes in the same directory.
 > The comparison and final choice are made in [DECISION.md](DECISION.md).
 
 ---
@@ -138,6 +139,6 @@
 > Only if evaluated through a POC.
 
 - **What was done:**
-- **Code:** `spikes/frontend/poc/<layer>-<technology>/`
+- **Code:** `spikes/frontend/<layer>-<technology>/` (next to this file)
 - **Measurements:** (bundle size, build time, Docker image size, axe / Lighthouse score…)
 - **Dead ends encountered:**
